@@ -129,45 +129,37 @@ nav {
     padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+h1 {
+    font-family: 'Candara';
+    font-size: 30px;
+    text-decoration: underline;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.blog-content {
+    display: block;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.blog-hr {
+    border: 2px dashed;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.blogimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.button {
+    border-radius: 12px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 12px;
+    padding: 12px 24px;
 }
 
 footer {
