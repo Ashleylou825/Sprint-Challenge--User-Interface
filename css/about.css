@@ -103,7 +103,7 @@ nav {
     align-items:center;
 }
 
-nav a {
+.header-nav nav a {
     text-decoration:none;
     -webkit-text-fill-color:#000;
 }
