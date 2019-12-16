@@ -180,3 +180,32 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Code added here for stretch goal - add CSS animation */
+
+@keyframes wiggle {
+    20% {
+      transform: translateX(4px);
+    }
+    40% {
+      transform: translateX(-4px);
+    }
+    60% {
+      transform: translateX(2px);
+    }
+    80% {
+      transform: translateX(-1px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .header-nav nav a:hover {
+    animation: wiggle .5s ease;
+    animation-iteration-count: 1;
+    background: blue;
+    color: black;
+}
+
+/* End of CSS animation stretch goal */ 
