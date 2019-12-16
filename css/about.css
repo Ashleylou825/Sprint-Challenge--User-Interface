@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* This is where my code for the missing header and navigation starts */
+
+header {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.header-nav {
+    flex:1;
+    display: flex;
+    flex-direction:row;
+}
+    
+.jumbo {
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    padding:3% 0%;
+}
+
+.header-img {
+    flex:1;
+    display:flex;
+    padding:1% 0%;
+}
+
+nav {
+    flex:3;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.header-nav nav a {
+    text-decoration:none;
+    -webkit-text-fill-color:#000;
+}
+
+    /* This is where my code for the missing header and navigation ends */
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.middle-content {
+    display: flex; 
+    margin-top: 10px; 
+}
+      
+.midbottom-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.top-hr {
+    width: 800px;
+    border: 1px dashed black;
+    align-items: center;
+}
+
+.box-hr {
+    width: 375px;
+    border: 1px dashed black;
+}
+
+.bottom-content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 12px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 12px;
+    padding: 12px 24px;
+}
+      
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Code added here for stretch goal - add CSS animation */
+
+@keyframes wiggle {
+    20% {
+      transform: translateX(4px);
+    }
+    40% {
+      transform: translateX(-4px);
+    }
+    60% {
+      transform: translateX(2px);
+    }
+    80% {
+      transform: translateX(-1px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .header-nav nav a:hover {
+    animation: wiggle .5s ease;
+    animation-iteration-count: 1;
+    background: blue;
+    color: black;
+}
+
+/* End of CSS animation stretch goal */ 
